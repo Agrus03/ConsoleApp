@@ -1,0 +1,63 @@
+{
+  "walletId": "wlt_9f3a21c4",
+  "owner": {
+    "userId": 10234,
+    "name": "Name",
+    "email": "email@gmail.com",
+    "isVerified": true
+  },
+  "balance": {
+    "currency": "USD",
+    "available": 1250.75,
+    "blocked": 149.25
+  },
+  "transactions": [
+    {
+      "transactionId": "txn_001",
+      "type": "deposit",
+      "amount": 500.00,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2026-01-10T09:15:32Z",
+      "metadata": {
+        "source": "bank_transfer",
+        "reference": "INV-1001"
+      }
+    },
+    {
+      "transactionId": "txn_002",
+      "type": "payment",
+      "amount": -120.50,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2026-01-11T14:42:10Z",
+      "metadata": null
+    },
+    {
+      "transactionId": "txn_003",
+      "type": "withdrawal",
+      "amount": -200.00,
+      "currency": "USD",
+      "status": "pending",
+      "timestamp": "2026-01-12T18:05:44Z",
+      "metadata": {
+        "destination": "ATM",
+        "fee": 2.50
+      }
+    }
+  ],
+  "limits": {
+    "daily": 1000.00,
+    "monthly": 10000.00
+  },
+  "settings": {
+    "allowOverdraft": false,
+    "notifications": {
+      "email": true,
+      "sms": false,
+      "push": true
+    }
+  },
+  "createdAt": "2025-12-01T08:00:00Z",
+  "updatedAt": null
+}
