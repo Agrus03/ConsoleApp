@@ -1,0 +1,22 @@
+{
+  "walletId": "",
+  "balance": {
+    "currency": "USD",
+    "available": 1250.75,
+    "blocked": 149.25
+  },
+  "transactions": [
+    {
+      "transactionId": "txn_001",
+      "type": "deposit",
+      "amount": 500.00,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2026-01-10T09:15:32Z",
+      "metadata": {
+        "source": "bank_transfer",
+        "reference": "INV-1001"
+      }
+    }
+  ]
+}

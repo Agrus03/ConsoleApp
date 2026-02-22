@@ -6,7 +6,7 @@ namespace ConsoleApp
     {
         static void Main()
         {
-            string filePath = "TransactionId.txt";
+            string filePath = "TransactionId.json";
             string[] lines = File.ReadAllLines(filePath);
             Wallet wallet = new Wallet();
             wallet.Balance = new Balance();
