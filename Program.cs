@@ -37,6 +37,10 @@ namespace ConsoleApp
                 if (cleanLine.StartsWith("\"metadata\":"))
                 {
                     currentContext = "metadata";
+                    if (currentTransaction != null)
+                    {
+                        currentTransaction.Metadata = new Metadata();
+                    }
                     continue;
                 }
 
@@ -122,12 +126,12 @@ namespace ConsoleApp
                     else if (key == "reference") currentTransaction.Metadata.Reference = value;
                 }
             }
-            Console.WriteLine("=== ФІНАЛЬНИЙ РЕЗУЛЬТАТ ===");
-            Console.WriteLine($"В гаманці знайдено транзакцій: {wallet.Transactions.Count}");
+            Console.WriteLine("================================");
+            Console.WriteLine($"Wallet Transaction Count: {wallet.Transactions.Count}");
             if (wallet.Transactions.Count > 0)
             {
-                Console.WriteLine($"Перша транзакція: {wallet.Transactions[0].Amount} {wallet.Transactions[0].Currency}");
-                Console.WriteLine($"Джерело (Metadata): {wallet.Transactions[0].Metadata.Source}");
+                Console.WriteLine($"First Transaction: {wallet.Transactions[0].Amount} {wallet.Transactions[0].Currency}");
+                Console.WriteLine($"Source (Metadata): {wallet.Transactions[0].Metadata.Source}");
             }
         }
     }
