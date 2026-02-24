@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp
 {
@@ -6,7 +7,8 @@ namespace ConsoleApp
     {
         public string? WalletId { get; set; }
         public Balance Balance { get; set; }
-        
+        public List<Transaction> Transactions { get; set; } = new List<Transaction>();
+
     }
     public class Balance
     {
