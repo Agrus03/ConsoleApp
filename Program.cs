@@ -8,7 +8,7 @@ namespace ConsoleApp
         static void Main()
         {
             // ===================================
-            // ЕТАП 1: Створюємо та читаєм файл
+            // ЕТАП 1: Створюємо та читаємо файл
             // ===================================
             string filePath = "Transaction.json"; // Створюємо адресу
             if (!File.Exists(filePath)) // Перевірка чи взагалі даний файл існує
@@ -20,7 +20,7 @@ namespace ConsoleApp
             // ===================================
             // ЕТАП 2: Ініціалізація
             // ===================================
-            // Створюємо головні обєкти, щоб уникнути NullReferenceException
+            // Створюємо головні об'єкти, щоб уникнути NullReferenceException
             Wallet wallet = new Wallet();
             wallet.Balance = new Balance();
             wallet.Transactions = new List<Transaction>(); // Ініціалізуємо і Захизаємо від NullReferenceException
@@ -86,7 +86,7 @@ namespace ConsoleApp
                     }
                     else if (currentContext == "transactions")
                     {
-                        // Транзакції закінчились, Додаєм, Ощищаємо
+                        // Транзакції закінчились, Додаємо, Ощищаємо
                         if (currentTransaction != null)
                         {
                             wallet.Transactions.Add(currentTransaction);
@@ -125,7 +125,7 @@ namespace ConsoleApp
                     {
                         wallet.Balance.Currency = value;
                     }
-                    // Записуємо дані(string) у фінансове число(decimal) згідно міжнародних норм
+                    // Записуємо дані(string) у фінансове число(decimal) згідно Міжнародних норм
                     else if (key == "available")
                     {
                         wallet.Balance.Available = decimal.Parse(value, System.Globalization.CultureInfo.InvariantCulture);
