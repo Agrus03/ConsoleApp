@@ -6,7 +6,7 @@ namespace ConsoleApp
     {
         static void Main()
         {
-            string filePath = "Transaction1.json"; 
+            string filePath = "Transaction.json"; 
 
             try
             {

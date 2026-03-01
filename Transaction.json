@@ -1,3 +1,66 @@
 {
-
+  "walletId": "WLT-8842-UA",
+  "balance": {
+    "currency": "UAH",
+    "available": 25450.75,
+    "blocked": 1200.00
+  },
+  "transactions": [
+    {
+      "transactionId": "TXN-0001",
+      "type": "deposit",
+      "amount": 5000.00,
+      "currency": "UAH",
+      "status": "completed",
+      "timestamp": "2026-03-01T10:00:00Z",
+      "metadata": {
+        "source": "card_replenishment",
+        "reference": "REF-99381"
+      }
+    },
+    {
+      "transactionId": "TXN-0002",
+      "type": "withdrawal",
+      "amount": -350.50,
+      "currency": "UAH",
+      "status": "completed",
+      "timestamp": "2026-03-01T14:30:00Z",
+      "metadata": {
+        "source": "coffee_shop",
+        "reference": "POS-4492"
+      }
+    },
+    {
+      "transactionId": "TXN-0003",
+      "type": "transfer",
+      "amount": -1200.00,
+      "currency": "UAH",
+      "status": "pending",
+      "timestamp": "2026-03-01T18:15:00Z",
+      "metadata": {
+        "source": "p2p_transfer",
+        "reference": "user_Bogdan"
+      }
+    },
+    {
+      "transactionId": "TXN-0004",
+      "type": "fee",
+      "amount": -15.00,
+      "currency": "UAH",
+      "status": "completed",
+      "timestamp": "2026-03-01T18:15:05Z"
+    },
+    {
+      "transactionId": "TXN-0005",
+      "type": "refund",
+      "amount": 1050.25,
+      "currency": "UAH",
+      "status": "completed",
+      "timestamp": "2026-02-28T09:20:00Z",
+      "metadata": {
+        "source": "online_store_return",
+        "reference": "RET-0012"
+      }
+    }
+  ]
 }
